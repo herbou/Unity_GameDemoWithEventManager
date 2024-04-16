@@ -21,7 +21,7 @@ public class Player : MonoBehaviour {
 
         if (health <= 0f) {
             isAlive = false;
-            GEventsManager.Invoke(GEvents.PlayerKilled, null);
+            GEventsManager.Invoke(GEvents.PlayerKilled);
         }
     }
 
